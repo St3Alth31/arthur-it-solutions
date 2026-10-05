@@ -46,7 +46,7 @@ export function Footer() {
           >
             {site.phoneDisplay}
           </a>
-          <p className="label text-ink-soft">WhatsApp {site.phoneIntl}</p>
+          <p className="label text-ink-soft">{t.quote.whatsappLabel}</p>
           <p className="label text-ink mt-4">{site.cities.join(", ")}</p>
           <p className="label text-ink-soft">{t.footer.hours}</p>
         </div>

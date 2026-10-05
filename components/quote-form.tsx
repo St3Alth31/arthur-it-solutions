@@ -477,7 +477,7 @@ export function QuoteForm() {
                   type="tel"
                   inputMode="tel"
                   autoComplete="tel"
-                  placeholder="0881 000 000"
+                  placeholder="+265 881 000 000"
                   value={state.phone}
                   onChange={(e) => update({ phone: e.target.value })}
                   aria-invalid={!!errors.phone}

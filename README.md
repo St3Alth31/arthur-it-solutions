@@ -25,7 +25,7 @@ npm run build    # production build
 
 Where submissions should go has not been decided yet. Set `NEXT_PUBLIC_QUOTE_ENDPOINT` in `.env.local` to a URL that accepts a JSON POST, such as a Formspree form.
 
-Until it is set, the form ends with a **Send on WhatsApp** button that carries the visitor's request summary to 0881 032 540, so no request is lost or falsely marked as sent.
+Until it is set, the form ends with a **Send on WhatsApp** button that carries the visitor's request summary to +265 881 032 540, so no request is lost or falsely marked as sent.
 
 ## Before launch
 
