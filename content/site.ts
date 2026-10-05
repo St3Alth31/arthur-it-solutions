@@ -53,7 +53,7 @@ export const images = {
     fence: { src: "/images/electric-fence.webp", brief: "Wall-top electric fence", ...landscape },
     power: { src: "/images/solar.jpg", brief: "Rooftop solar panels", ...landscape },
   } satisfies Record<ServiceKey, ImageSpec>,
-  // Real installs only, never stock (spec 2.5). Lead with clean cable management.
+  // Meant for real installs (spec 2.5); most are stand-ins until sourced, see README. Lead with clean cable management.
   // A portrait slot spans two grid rows; the grid is laid out for exactly one.
   work: [
     { src: "/images/work-1.jpg", brief: "Neat cable runs", ...landscape },

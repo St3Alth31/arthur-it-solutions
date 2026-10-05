@@ -7,7 +7,7 @@ import { useLanguage } from "@/components/language-provider"
 import { SectionHeader } from "@/components/section-header"
 import { ImageSlot } from "@/components/image-slot"
 
-// Real installs only, never stock imagery (spec 2.5).
+// Meant for photos of real installs (spec 2.5); stand-ins are tracked in the README.
 // Grid: five landscape photos, one portrait spanning two rows, and a quote tile in the remaining cell.
 // Two columns on phones, four on large screens; both fill completely when the portrait sits third.
 export function WorkSection() {

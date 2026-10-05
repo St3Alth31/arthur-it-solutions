@@ -1,6 +1,6 @@
 import { site } from "@/content/site"
 
-/** Text wordmark until the client's logo file is supplied. */
+/** Text wordmark. This is the brand mark: there is no logo file. */
 export function Wordmark({ tone = "dark" }: { tone?: "dark" | "light" }) {
   return (
     <span className="flex items-baseline gap-2 leading-none">
