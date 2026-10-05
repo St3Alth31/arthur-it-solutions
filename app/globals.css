@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/*
+  Layout concept: BHL's editorial grid (hairline gap-px grids, rule-topped section
+  headers, night bands for price and quote) set in heavy condensed signage type.
+
+  Brand tokens. Exact hex values, logo and typefaces have not been supplied yet:
+  swap the values below when they arrive and the whole site follows.
+*/
+:root {
+  --brand-red: #d7182a;
+  --brand-red-deep: #a8101f;
+  --brand-yellow: #ffc21a;
+  --brand-blue: #1e5bd8;
+  --brand-white: #ffffff;
+
+  /* Neutrals carry a slight bias toward the brand blue */
+  --paper: #f4f6fa;
+  --ink: #101b33;
+  --ink-soft: #4f5b73;
+  --line: #d9dee8;
+  --mist: #e6eaf2;
+  --night: #0d1730;
+  --night-raised: #13203f;
+  --night-line: #26324f;
+}
+
+@theme inline {
+  --color-primary: var(--brand-red);
+  --color-primary-deep: var(--brand-red-deep);
+  --color-yellow: var(--brand-yellow);
+  --color-blue: var(--brand-blue);
+  --color-white: var(--brand-white);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-mist: var(--mist);
+  --color-night: var(--night);
+  --color-night-raised: var(--night-raised);
+  --color-night-line: var(--night-line);
+
+  /* Big Shoulders has an optical-size axis: large sizes get the display cut, small sizes the text cut */
+  --font-display: var(--ff-display), "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-sans: var(--ff-body), "Segoe UI", system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--line);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  ::selection {
+    background-color: var(--brand-red);
+    color: var(--brand-white);
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand-yellow);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Sentence-case label set in the text cut of Big Shoulders */
+  .label {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Recording indicator in the hero viewfinder */
+@keyframes rec-blink {
+  0%,
+  55% {
+    opacity: 1;
+  }
+  56%,
+  100% {
+    opacity: 0.15;
+  }
+}
+.rec-dot {
+  animation: rec-blink 1.4s steps(1, end) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rec-dot {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
