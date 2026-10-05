@@ -53,7 +53,7 @@ Until a photo is supplied, its slot shows the brief written on a placeholder. To
 | Recent work 3 | DVR cabinet wiring | Landscape | 4:3 | 1600 × 1200 px |
 | Recent work 4 | Inverter battery rack | Landscape | 4:3 | 1600 × 1200 px |
 | Recent work 5 | Perimeter fence corner | Landscape | 4:3 | 1600 × 1200 px |
-| Recent work 6 | Team on site | Landscape | 4:3 | 1600 × 1200 px |
+| Recent work 6 | Team on site | Portrait | 3:4 | 1200 × 1600 px |
 
 Sourcing notes:
 

@@ -92,9 +92,11 @@ const en = {
   },
   work: {
     label: "Recent work",
-    title: "Photos from our own installs are on the way.",
-    body: "We are photographing recent jobs now. We won't fill this space with stock pictures of someone else's cameras.",
+    title: "From recent jobs.",
+    body: "More photos go up here as jobs are finished.",
     placeholder: "Photo coming soon",
+    ctaTitle: "Want this at your property?",
+    ctaLink: "Get a free quote",
   },
   trust: {
     label: "What customers say",
@@ -341,9 +343,11 @@ const ny: Copy = {
   },
   work: {
     label: "Ntchito zaposachedwa",
-    title: "Zithunzi za ntchito zathu zikubwera posachedwa.",
-    body: "Tikujambula zithunzi za ntchito zaposachedwa. Sitidzaika pano zithunzi za makamera a anthu ena.",
+    title: "Kuchokera ku ntchito zaposachedwa.",
+    body: "Tikuwonjezera zithunzi pano ntchito zikamatha.",
     placeholder: "Chithunzi chikubwera",
+    ctaTitle: "Mukufuna izi pamalo anu?",
+    ctaLink: "Pemphani mtengo kwaulere",
   },
   trust: {
     label: "Zomwe makasitomala amanena",

@@ -67,6 +67,8 @@ export function Hero() {
         </div>
         <div className="absolute inset-0 bg-night/35" />
         <div className="absolute inset-0 bg-gradient-to-t from-night via-night/40 to-transparent" />
+        {/* Keeps the nav and viewfinder readout legible over bright photos */}
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-night/75 to-transparent" />
       </div>
 
       {/* Viewfinder: the page opens like a live camera feed */}
