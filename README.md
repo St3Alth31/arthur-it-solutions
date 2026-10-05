@@ -58,7 +58,7 @@ To change a photo, put the file in `public/images/` and set that slot's `src` in
 | Recent work 3 | DVR cabinet wiring | Landscape | 4:3 | 1600 × 1200 px | Stand-in |
 | Recent work 4 | Inverter battery rack | Landscape | 4:3 | 1600 × 1200 px | Stand-in (replace first) |
 | Recent work 5 | Perimeter fence corner | Landscape | 4:3 | 1600 × 1200 px | Stand-in |
-| Recent work 6 | Team on site | Portrait | 3:4 | 1200 × 1600 px | Real |
+| Recent work 6 | Team on site | Portrait | 3:4 | 1200 × 1600 px | Stand-in (cropped from a landscape photo, 960 × 1280) |
 
 Sourcing notes:
 
